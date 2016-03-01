@@ -20,14 +20,12 @@ BoxLayout:
     on_release: self.release_callback(self.t_id)
     color: (0., 0., 0., 1.)
 
-
 <TodoList>:
     StackLayout:
         orientation: 'lr-tb'
         id: todos
         size_hint: (1., None)
         height: self.minimum_height
-
 
 <Footer>:
     orientation: 'horizontal'
@@ -37,7 +35,6 @@ BoxLayout:
         vis_filter: 'SHOW_ACTIVE'
     FilterLink
         vis_filter: 'SHOW_COMPLETED'
-
 
 <AddTodo>:
     orientation: 'horizontal'

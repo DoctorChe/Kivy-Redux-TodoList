@@ -1,6 +1,5 @@
 from kivy.uix.label import Label
-from kivy.properties import (ObjectProperty, BooleanProperty, StringProperty,
-                             NumericProperty)
+from kivy.properties import ObjectProperty, BooleanProperty, NumericProperty
 from kivy.uix.behaviors import ButtonBehavior
 
 class Todo(ButtonBehavior, Label):
