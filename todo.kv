@@ -19,7 +19,7 @@ BoxLayout:
     strikethrough: self.completed
     on_release: self.release_callback(self.t_id)
     color: (0., 0., 0., 1.)
-    on_strikethrough: print self.strikethrough
+
 
 <TodoList>:
     StackLayout:
@@ -28,7 +28,6 @@ BoxLayout:
         size_hint: (1., None)
         height: self.minimum_height
 
-<Link>:
 
 <Footer>:
     orientation: 'horizontal'
@@ -38,6 +37,7 @@ BoxLayout:
         vis_filter: 'SHOW_ACTIVE'
     FilterLink
         vis_filter: 'SHOW_COMPLETED'
+
 
 <AddTodo>:
     orientation: 'horizontal'
